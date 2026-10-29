@@ -1001,6 +1001,8 @@ en: {
     summaryH:"Summary",
     summary:"Music and culture marketing strategist and founder of Revive Creative, with experience spanning music production, artist relations, digital distribution and integrated campaigns. My campaign work dates back to 2019. I connect cultural insight, content and partnerships to take campaigns from concept to execution. I grew a new Instagram channel to over 2 million views in a single 30-day period without paid advertising, led Lavi’s release campaign integrating a press event, media outreach and Spotify ads, and planned 24 episodes of HHCC Season 2.",
     metricsH:"Key results", th:["Result","Value","Period / definition"],
+    toolsH:"Tools & Platforms",
+    tools:[["Social & Analytics","Instagram Insights, Meta Business Suite, YouTube Studio"],["Content Creation","Canva, CapCut, Final Cut Pro"],["Productivity & Collaboration","Google Workspace, Microsoft Office"],["Audio Production","Ableton Live, Logic Pro, Pro Tools"],["AI-assisted Research & Content Development","ChatGPT, Claude"]],
     speakH:"Speaking & hosting", eduH:"Education",
     expH:"Experience", projH:"Selected projects", intlH:"International", skillsH:"Skills", affH:"Current positions", pfLine:"Full credits: 50+ projects in live production, speaking & hosting, A&R, songwriting and vocal arrangement, plus 13 approved grant proposals (see the Portfolio tab).",
     skills:["Integrated campaign strategy","Social-first content","Audience insights & social media analytics","Artist & label relations","A&R","Media relations","Grant & budget planning","Partnerships","Concert & event production","Vocal production & arrangement","Cross-functional project management","English · Mandarin"],
@@ -1220,6 +1222,8 @@ en: {
     summaryH:"摘要",
     summary:"音樂與文化行銷策略人，溫室創意創辦人。將文化洞察、內容與合作資源轉成能落地的整合行銷，從切角到交付。全新 Instagram 帳號於單一 30 天取得 200 萬+ 觀看，未投放付費廣告（經營者提供）；統籌 Lavi 翁彤薰發行宣傳，串聯記者會、媒體與 Spotify 廣告（一週投放期間月聽眾 47 → 1,713）；策劃《HHCC 喇街頭》第二季 24 集。應徵 Spotify 台灣行銷經理。",
     metricsH:"主要成果", th:["成果","數值","期間／定義"],
+    toolsH:"工具與平台",
+    tools:[["社群經營與數據分析","Instagram Insights、Meta Business Suite、YouTube Studio"],["內容與影像製作","Canva、CapCut、Final Cut Pro"],["辦公與協作","Google Workspace、Microsoft Office"],["音訊製作","Ableton Live、Logic Pro、Pro Tools"],["AI 輔助研究與內容開發","ChatGPT、Claude"]],
     speakH:"演講與主持", eduH:"學歷",
     expH:"工作經歷", projH:"代表專案", intlH:"國際經驗", skillsH:"專業能力", affH:"現任職務", pfLine:"完整作品集：50 多項演出製作、演講主持、A&R、詞曲、合聲編寫作品，以及 13 件過審補助企劃（見「作品集」分頁）。",
     skills:["整合行銷策略","社群優先內容","受眾洞察與數據判讀","藝人與唱片公司關係","A&R","媒體關係","補助與預算企劃","商務合作","演唱會與活動製作","配唱製作與合聲編寫","跨部門專案管理","英文・中文"],
@@ -1677,6 +1681,7 @@ function renderRecruiter(){
       <h2>${esc(r.speakH)}</h2><ul>${t().experience.speak.items.map(it => `<li>${esc(it.y)} · ${esc(it.org)} — ${esc(it.rl)}</li>`).join("")}<li>${t().experience.speak.host.map(h => `${esc(h[0])} ${esc(h[1])}`).join(lang==="zh-TW"?"；":"; ")}</li></ul>
       <h2>${esc(r.eduH)}</h2><div class="job"><p class="jh"><span>${esc(t().experience.edu.school)} · ${esc(t().experience.edu.degree)}</span><span>${EDUCATION.year}</span></p><ul><li>${esc(t().experience.edu.award)}</li></ul></div>
       <h2>${esc(r.skillsH)}</h2><div class="skills">${r.skills.map(s => `<span class="pill">${esc(s)}</span>`).join("")}</div>
+      <h2>${esc(r.toolsH)}</h2><ul>${r.tools.map(x => `<li><b>${esc(x[0])}${lang==="zh-TW"?"：":": "}</b>${esc(x[1])}</li>`).join("")}</ul>
     </article></div>`;
 }
 
